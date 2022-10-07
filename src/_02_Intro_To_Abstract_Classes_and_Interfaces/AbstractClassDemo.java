@@ -18,35 +18,59 @@ package _02_Intro_To_Abstract_Classes_and_Interfaces;
  */
 public abstract class AbstractClassDemo {
 
-    // An abstract class can contain member variables.
-    int num;
+	// An abstract class can contain member variables.
+	int num;
 
-    /*
-     * This is an example of an abstract method. Notice that the abstract
-     * keyword is also used here and it ends in a semi-colon instead of having a
-     * body defined in curly brackets.
-     * 
-     * Any class that extends the abstract class will be required to implement
-     * its abstract methods with the same method header minus the abstract
-     * keyword.
-     */
-    public abstract void abstractDemo();
+	/*
+	 * This is an example of an abstract method. Notice that the abstract keyword is
+	 * also used here and it ends in a semi-colon instead of having a body defined
+	 * in curly brackets.
+	 * 
+	 * Any class that extends the abstract class will be required to implement its
+	 * abstract methods with the same method header minus the abstract keyword.
+	 */
+	public abstract void abstractDemo();
 
-    /*
-     * An abstract method without a void return type will only require curly
-     * brackets to be considered "implemented", but if it has a return type it
-     * also requires a return statement that returns an appropriate value.
-     */
-    public abstract int abstractNumDemo();
+	/*
+	 * An abstract method without a void return type will only require curly
+	 * brackets to be considered "implemented", but if it has a return type it also
+	 * requires a return statement that returns an appropriate value.
+	 */
+	public abstract int abstractNumDemo();
 
-    // An abstract class can also still contain implemented methods.
-    public void demo() {
-        System.out.println("Demo");
-    }
+	// An abstract class can also still contain implemented methods.
+	public void demo() {
+		System.out.println("Demo");
+	}
 
+	/*
+	 * 1. Create a class that extends the AbstractClassDemo class and implement its
+	 * methods.
+	 */
+
+	public class Student extends AbstractClassDemo implements InterfaceDemo, DemoInterface{
+		@Override
+		public void abstractDemo() {
+			// TODO Auto-generated method stub
+
+		}
+
+		@Override
+		public int abstractNumDemo() {
+			// TODO Auto-generated method stub
+			return 0;
+		}
+
+		@Override
+		public double interDemo() {
+			// TODO Auto-generated method stub
+			return 0;
+		}
+
+		@Override
+		public String faceDemo() {
+			// TODO Auto-generated method stub
+			return null;
+		}
+	}
 }
-
-/*
- * 1. Create a class that extends the AbstractClassDemo class and implement its
- * methods.
- */
