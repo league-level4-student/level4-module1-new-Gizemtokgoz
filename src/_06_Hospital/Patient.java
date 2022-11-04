@@ -1,15 +1,15 @@
 package _06_Hospital;
 
 public class Patient {
-	int happy = 0;
+	Boolean happy = false;
 	public void checkPulse(){
-		happy = 1;
+		happy = true;
 
     }
 
 	public boolean feelsCaredFor() {
 		// TODO Auto-generated method stub
-		if (happy == 1) {
+		if (happy) {
 			return true;
 		}
 		

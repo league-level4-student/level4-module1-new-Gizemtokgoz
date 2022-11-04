@@ -1,6 +1,6 @@
 package _06_Hospital;
 
-public class Surgeon {
+public class Surgeon extends Doctor {
 
 	public Boolean makesHouseCalls() {
 		// TODO Auto-generated method stub

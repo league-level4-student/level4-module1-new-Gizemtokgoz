@@ -2,7 +2,7 @@ package _06_Hospital;
 
 import java.util.List;
 
-public class GeneralPractitioner {
+public class GeneralPractitioner extends Doctor {
 
 	public Boolean makesHouseCalls() {
 		// TODO Auto-generated method stub
@@ -13,15 +13,4 @@ public class GeneralPractitioner {
 		// TODO Auto-generated method stub
 		return false;
 	}
-
-	public void assignPatient(Patient patient) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	public List<Doctor> getPatients() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
 }
